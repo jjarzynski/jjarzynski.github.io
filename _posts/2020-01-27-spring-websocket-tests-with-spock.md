@@ -22,7 +22,7 @@ public class EchoSocket extends TextWebSocketHandler {
 
     @Override
     public void handleTextMessage(WebSocketSession session,
-                                  TextMessage message) throws IOException {
+                                  TextMessage message) {
 
         if (message.getPayload().isEmpty()) return;
 

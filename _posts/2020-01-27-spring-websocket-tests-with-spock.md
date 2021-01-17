@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Painless WebSocket tests with Spock
+title: WebSocket tests with Spock
 ---
 
 Going beyond the usual REST endpoints to also accept WebSocket connections is a fairly common expectation for your Spring web application in 2020. So is giving up on plain JUnit to leverage the beauty of [Spock](http://spockframework.org/spock/docs/1.3/index.html). If not done right, this mix will backfire at you with tests that are flaky and hard to debug - the usual price for going asynchronous.

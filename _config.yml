@@ -1,43 +1,39 @@
-# Setup
-title: jjarzynski
-tagline: back-to-back-end
-url: https://jjarzynski.github.io
-paginate: 1
-baseurl: ""
-permalink: pretty
+# Site settings
+title: Monochrome | A minimal, responsive Jekyll blog theme
+description: "A minimal, responsive, ready to use blog template, built with Jekyll."
+url: "http://www.dyutibarma.github.io/monochrome"
+author:
+  name: "The Review Index"
+  email: "dyutibarma@gmail.com"
+  url: "https://thereviewindex.com"
 
-# Gems
-plugins:
-  - jekyll-gist
+# Build settings
+baseurl: /monochrome # Change this to your relative path (ex: /blog/), or leave just a /
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+gems:
   - jekyll-paginate
-  - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Optimize Jekyll
-exclude:
-  - .editorconfig
-  - .git
-  - .jekyll-cache
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.md
-  - README.md
-
-sass:
-  sass_dir: _sass
-  style: :compressed
+# Custom variables
+version: "1.0.0"
 
 # Options
-
-# Replace this value and uncomment to enable Google Analytics tracking
-# ga_analytics: UA-000000-0
-
-# Specify the author for blog posts
-author:
-  name: jjarzynski
-  url: https://jjarzynski.github.io
-  email: jjarzynski@evojam.com
-
-# Custom vars
-version: 3.0.0
-github:
-  repo: https://github.com/poole/poole
+custom_header: false
+custom_nav_footer: false
+reverse: false
